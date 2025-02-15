@@ -11,6 +11,7 @@ body {
 }
 
 form {
+  display: none;
   position: absolute;
   top: 25vh;
   left: 50%;
