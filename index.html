@@ -1,26 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <form id="userInput">
-      <label for="youtubeChannel">Find: </label>
-      <input type="text" id="youtubeChannel" placeholder="">
-    </form>
-    <div id="links">
-      <ul>
-        <li class="link"><a id="link1">Youtube link 1</a></li>
-        <li class="link"><a id="link2">Youtube link 2</a></li>
-        <li class="link"><a id="link3">Youtube link 3</a></li>
-        <li class="link"><a id="link4">Youtube link 4</a></li>
-        <li class="link"><a id="link5">Youtube link 5</a></li>
-      </ul>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script type="module" src="script.js" defer></script>
+</head>
+<body>
+  <form>
+    <label for="dropDown">Find</label>
+    <select id="dropDown" name="dropDown">
+      <option value=""></option>
+      <option value="GMHikaru">Chess</option>
+      <option value="TruckerTim">Trucker Tim</option>
+    </select>
+  </form>
+  <div id="loadingContainer" class="centerBlock">
+    <div class="loadingBlock">
     </div>
-  </body>
+    <div class="loadingBlock">
+    </div>
+    <div class="loadingBlock">
+    </div>
+    <div class="loadingBlock">
+    </div>
+    <div class="loadingBlock">
+    </div>
+  </div>
+  <div id="links" class="centerBlock">
+    <div class="link"><a id="element1">youtube link 1</a>
+    </div>
+    <div class="link"><a id="element2">youtube link 2</a>
+    </div>
+    <div class="link"><a id="element3">youtube link 3</a>
+    </div>
+    <div class="link"><a id="element4">youtube link 4</a>
+    </div>
+    <div class="link"><a id="element5">youtube link 5</a>
+    </div>
+</body>
+
 </html>
