@@ -1,71 +1,93 @@
 html {
-  height: 100%;
   width: 100%;
+  height: 100%;
+  font-size: 16px;
 }
 body {
-  margin: 0;
-  font-size: 16px;
-  background-image: url("2107FD41-C25D-494B-AD52-6C497BD2242E.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-image: url("2107FD41-C25D-494B-AD52-6C497BD2242E.jpeg");
 }
 
 form {
-  display: none;
-  position: absolute;
-  top: 25vh;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, 0);
+  width: 24%;
+  height: 14%;
+  display: flex;
+  max-width: 220px;
+  min-width: 160px;
+  line-height: 2.5;
+  font-size: 4.8rem;
+  position: absolute;
+  align-items: center;
+  font-family: "Verdana";
+  color: rgba(0, 0, 0, 0.6);
+  flex-direction: column-reverse;
+  transform: translate(-50% , -230%);
+}
+#dropDown {
+  width: 90%;
+  height: 30px;
+  opacity: 0.7;
+  border-radius: 8px;
+  position: absolute;
+  background-color: black;
+}
+
+@keyframes moveGradient {
+  0% { background-position: 60% 0%;}
+  100% { background-position: 100% 0%;}
+}
+.centerBlock {
+  top: 50%;
+  gap: 12px;
+  left: 50%;
+  width: 68%;
+  height: 24%;
+  padding: 3px;
+  display: flex;
+  min-width: 280px;
+  max-width: 420px;
+  min-height: 300px;
+  position: absolute;
+  border-radius: 4px;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  transform: translate(-50%, 0);
+  background-color: rgba(0, 0, 0, 0.4);
 }
-form label {
-  font-family: "Sans-serif";
-  font-weight: 600;
-  color: white;
-  font-size: 3rem;
-  line-height: 2;
-}
-form input {
-  color: black;
-  font-size: 1.2rem;
-  opacity: 0.6;
-  font-family: "Poppins";
-  outline: none;
+.loadingBlock {
+  width: 80%;
+  height: 14%;
+  border-radius: 4px;
+  display: inline-block;          
+  background-size: 300% 100%;
+  background-position: 0 50%;
+  animation: moveGradient 0.74s infinite alternate;
+  background-image: linear-gradient(90deg, black ,lightgrey);
 }
 
 #links {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: auto;
-  width: 10%;
-  min-width: 170px;
-  background-color: rgba(20, 20, 20, 0.4);
-  border-radius: 7px;
+  display: flex;                  
 }
-#links ul li {
-  lin-style-position: inside;
-  font-family: "Poppins", sans-sarif;
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  align-items: center;
-  line-height: 2;
-  overflow: hidden;
-  transform: translate(-1.1em, 0);
+#links .link {
+  width: 80%;
+  height: 14%;
+  text-align: center;
+  display: inline-block;
+  font-family: "Poppins";
 }
-#links a {
+a {
   color: white;
+  font-size: 1.8rem;
   display: inline-block;
   text-decoration: none;
 }
-#links a:hover {
-  transform: scale(1.1);
+a:hover {
+  transform: scale(1.04);
 }
-#links a:active {
-  transform: scale(1);
-  color: lightgrey;
+a:active {
+  transform: scale(0.98);
 }
