@@ -1,4 +1,4 @@
-import { runFunctions } from "./script2.js";
+import { runFunctions } from "script2.js";
 
 let toggleLoading = document.getElementsByClassName("centerBlock")[0];
 let toggleLinks = document.getElementsByClassName("centerBlock")[1];
