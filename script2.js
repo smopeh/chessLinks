@@ -1,4 +1,4 @@
-const apiKey = process.env.API_KEY;
+const apiKey = "AIzaSyC2L1GFUrBkXAaEdXcijUsqmPTxT-joEzE";
 const baseUrl = "https://www.googleapis.com/youtube/v3";
 
 async function youtube(name) {
