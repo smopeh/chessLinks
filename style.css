@@ -74,8 +74,8 @@ form {
   display: flex;
 }
 #links .link {
-  width: 80%;
-  height: 14%;
+  width: 89%;
+  height: 15%;
   text-align: center;
   display: inline-block;
   font-family: "Poppins";
@@ -83,6 +83,7 @@ form {
 }
 a {
   color: white;
+  font-size: 1rem;
   display: inline-block;
   text-decoration: none;
 }
