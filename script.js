@@ -13,9 +13,9 @@ async function loading(name) {
   
     try {
       const videos = await runFunctions(name);
-      console.log(videos[0]);
       for (let i = 0; i < 5; i++) {
         document.getElementById(`element${i+1}`).href = `https://www.youtube.com/watch?v=${videos[i].snippet.resourceId.videoId}`;
+        document.getElementById(`element${i+1}`).innerHTML = videos[i].snippet.title;
       }
       document.getElementsByClassName("centerBlock")[1].style.display = "flex";
       document.getElementsByClassName("centerBlock")[0].style.display = "none";
